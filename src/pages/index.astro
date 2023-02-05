@@ -1,15 +1,19 @@
 ---
+import BaseHead from '../components/BaseHead.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 ---
 
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Anurag Roy</title>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
   <body>
-    <h1 class="text-rose-600">Anurag Roy</h1>
+    <h1>Full-stack developer and software engineer</h1>
+    <p>
+      Hi, my name is Anurag and I am a full-stack engineer from Kolkata. I
+      specialize in TypeScript and Angular and have experience working with a
+      variety of web frameworks.
+    </p>
   </body>
 </html>
