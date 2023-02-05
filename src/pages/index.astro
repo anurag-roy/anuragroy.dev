@@ -1,19 +1,36 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import Links from '../components/Links.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
+
+import '../global.css';
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html
+  lang="en"
+  class="h-full antialiased bg-gradient-to-b from-white via-[#FAF0CD] to-[#FAB397]"
+>
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
-  <body>
-    <h1>Full-stack developer and software engineer</h1>
-    <p>
-      Hi, my name is Anurag and I am a full-stack engineer from Kolkata. I
-      specialize in TypeScript and Angular and have experience working with a
-      variety of web frameworks.
-    </p>
+  <body class="h-full flex flex-col max-w-4xl mx-auto">
+    <Header />
+    <main
+      class="grow p-4 flex flex-col justify-center sm:px-8 md:px-12 lg:px-16"
+    >
+      <h1 class="text-4xl font-serif font-semibold text-zinc-800 md:text-5xl">
+        Full-stack developer and software engineer.
+      </h1>
+      <p class="mt-8 font-medium text-lg text-zinc-600 md:text-xl md:mt-12">
+        Hey! I'm Anurag, a full-stack engineer from Kolkata. I specialize in
+        TypeScript and Angular and have experience working with a variety of web
+        frameworks.
+      </p>
+      <Links />
+    </main>
+    <Footer />
   </body>
 </html>
