@@ -1,3 +1,3 @@
-export const SITE_TITLE = 'Anurag Roy - Full-stack TypeScript Developer';
+export const SITE_TITLE = 'Anurag Roy - Software Engineer';
 export const SITE_DESCRIPTION =
-  "Hey, I am Anurag! I'm a full stack engineer, specializing in TypeScript and Angular.";
+  'Personal website for Anurag Roy, a software engineer passionate about building robust and scalable web applications using Angular, Node.js, and TypeScript.';
