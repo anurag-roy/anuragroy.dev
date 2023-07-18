@@ -21,14 +21,14 @@ const links = [
 ];
 ---
 
-<div class="ml-auto flex gap-6 sm:gap-8">
+<div class="flex gap-6 sm:gap-8">
   {
     links.map((l) => (
       <a class="group" aria-label={l.label} href={l.url}>
         <svg
           viewBox="0 0 24 24"
           aria-hidden="true"
-          class="h-6 w-6 fill-zinc-800 transition group-hover:fill-zinc-700"
+          class="h-6 w-6 fill-zinc-700 transition group-hover:fill-zinc-800"
           set:html={l.innerPath}
         />
       </a>

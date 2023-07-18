@@ -1,12 +1,23 @@
----
-import Links from './Links.astro';
----
-
-<header class="py-2 flex items-center gap-2">
-  <h1
-    class="text-sm font-serif uppercase font-bold tracking-wide text-zinc-900"
+<header
+  class="py-2 flex items-center justify-between gap-2 font-serif tracking-wide"
+>
+  <h1 class="text-sm uppercase font-bold text-zinc-900">Anurag Roy</h1>
+  <a
+    href="mailto:hello@anuragroy.dev"
+    class="font-semibold text-md inline-flex items-center justify-center gap-0.5 text-zinc-800 group"
   >
-    Anurag Roy
-  </h1>
-  <Links />
+    <span
+      class="relative after:absolute after:bg-zinc-800 after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300"
+    >
+      Resume
+    </span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-6 w-6 mb-0.5"
+      viewBox="0 0 24 24"
+      ><path
+        fill="currentColor"
+        d="M5 17.59L15.59 7H9V5h10v10h-2V8.41L6.41 19L5 17.59Z"></path>
+    </svg>
+  </a>
 </header>
